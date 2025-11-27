@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigaAgent Pro - AI помощник для бизнеса</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        
+        .demo-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .feature-card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .tech-stack {
+            background: #34495e;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        .tech-item {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 16px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+        }
+        
+        .btn-github {
+            background: #2c3e50;
+        }
+        
+        .btn-github:hover {
+            background: #1a252f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 GigaAgent Pro</h1>
+            <p>AI помощник для поиска новостей, грантов и анализа бизнеса</p>
+            <div class="demo-badge">ДЕМО-ВЕРСИЯ ДЛЯ РАБОТОДАТЕЛЯ</div>
+        </div>
+        
+        <div class="content">
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📰</div>
+                    <h3>Поиск новостей</h3>
+                    <p>Актуальные новости о поддержке бизнеса с фильтрацией по датам и источникам</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🏦</div>
+                    <h3>Поиск грантов</h3>
+                    <p>База грантов, субсидий и программ финансирования для малого и среднего бизнеса</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Анализ бизнеса</h3>
+                    <p>AI-анализ бизнес-идей, стратегическое планирование и рекомендации</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>Генерация контента</h3>
+                    <p>Создание текстового контента, бизнес-мемов и презентационных материалов</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <h2>🔗 Ссылки на проект</h2>
+                <a href="https://github.com/IT45rus/bot-project" class="btn btn-github" target="_blank">
+                    📁 Исходный код на GitHub
+                </a>
+                <br>
+                <p style="margin-top: 20px;">
+                    <strong>📧 Для связи:</strong> [ваш email]<br>
+                    <strong>💼 Полная документация:</strong> в репозитории
+                </p>
+            </div>
+            
+            <div class="tech-stack">
+                <h3>🛠 Технологический стек:</h3>
+                <div class="tech-item">Python 3.9+</div>
+                <div class="tech-item">FastAPI</div>
+                <div class="tech-item">Ollama LLM</div>
+                <div class="tech-item">BeautifulSoup4</div>
+                <div class="tech-item">aiohttp</div>
+                <div class="tech-item">HTML5/CSS3</div>
+                <div class="tech-item">JavaScript</div>
+                <div class="tech-item">Git</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
